@@ -12,3 +12,9 @@ ctx.lineWidth = 10;
 
 let startX = 0;
 let startY = 0;
+let hue = 0;
+
+canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("mousedown", () => (isDraw = true));
+canvas.addEventListener("mouseup", () => (isDraw = false));
+canvas.addEventListener("mouseout", () => (isDraw = false));
